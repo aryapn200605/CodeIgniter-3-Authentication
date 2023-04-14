@@ -4,15 +4,7 @@
     <div class="card-body p-5">
         <div class="mb-3 mt-md-4">
           
-          <?php
-
-            if($this->session->flashdata('sukses')) {
-                  echo '<script> msg("success", "'.$this->session->flashdata('sukses').'"</script>';
-            }
-            
-            echo form_open('login');
-          
-          ?>
+          <?php echo form_open('login'); ?>
           <!-- login form -->
             <h2 class="fw-bold mb-2 text-center">Login</h2>
             <div class="mb-3">

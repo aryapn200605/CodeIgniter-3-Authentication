@@ -5,7 +5,6 @@ class Forgot_password extends CI_Controller
 {
     public function index()
     {
-
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
         if ($this->form_validation->run() == FALSE) {

@@ -4,15 +4,7 @@
     <div class="card-body p-5">
         <div class="mb-3 mt-md-4">
           
-          <?php
-
-            if($this->session->flashdata('sukses')) {
-                  echo '<p class="warning" style="margin: 10px 20px;">'.$this->session->flashdata('sukses').'</p>';
-            }
-            
-            echo form_open_multipart('register');
-          
-          ?>
+          <?php echo form_open_multipart('register'); ?>
           <!-- register form -->
             <h2 class="fw-bold mb-2 text-center">Register</h2>
             <div class="mb-3">

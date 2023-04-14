@@ -23,7 +23,12 @@
 </head>
 <body>
 
-<?php $this->load->view('layouts/navbar'); ?>
+<?php 
+
+$this->load->view('layouts/navbar'); 
+$this->form_validation->set_error_delimiters('<div class="text-danger">', '</div>');
+
+?>
 
 <div class="vh-100 d-flex justify-content-center align-items-center">
     <div class="container">

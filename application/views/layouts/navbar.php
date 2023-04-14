@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container">
-    <a href="<?php echo site_url("/"); ?>" class="navbar-brand">CodeIgniter 3</a>
+    <a href="<?php echo site_url("/"); ?>" class="navbar-brand" disabled>CodeIgniter 3</a>
     <form class="d-flex">
       <?php if ($this->session->userdata('id')) { ?>
         <a href="<?php echo site_url("login/logout"); ?>" class="btn btn-outline-danger">Sign Out</a>
