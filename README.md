@@ -6,5 +6,6 @@
 3. Pastikan 'base_url' yang ada di application/config/config.php sesuai dengan path folder anda
 4. Buat database dengan nama codeigniter_3 dan import file database.sql kedalam database tersebut
 5. Buka browser dan arahkan menuju folder ini
+6. Lakukan Register terlebih dahulu lalu login dan masuk ke halaman dashboard
 
 ##### github : https://github.com/aryapn200605/CodeIgniter-3-Authentication.git
