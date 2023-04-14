@@ -37,7 +37,7 @@
             </div>
             <div class="mb-3">
                 <label class="form-label ">Profile Picture</label>
-                <input type="file" class="form-control" name="image_upload" id="image_upload" value="<?php echo set_value('image_upload'); ?>" placeholder="Confirm password">
+                <input type="file" class="form-control" name="image_upload" id="image_upload" value="<?php echo set_value('image_upload'); ?>" placeholder="Confirm password" required>
                 <p><?php echo form_error('image_upload') ;?></p>
             </div>
             <div class="d-grid">

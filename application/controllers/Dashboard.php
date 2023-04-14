@@ -10,9 +10,9 @@ class Dashboard extends CI_Controller {
 
     //Load Halaman dashboard
     public function index() {
-        $email = $this->session->userdata('email');
+        $id = $this->session->userdata('id');
 
-        $data['users'] = $this->users->getByEmail($email);
+        $data['users'] = $this->users->getUserInfo($id);
 
         $this->load->view('auth/dashboard', $data);
     }

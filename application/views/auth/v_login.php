@@ -7,7 +7,7 @@
           <?php
 
             if($this->session->flashdata('sukses')) {
-                  echo '<p class="warning" style="margin: 10px 20px;">'.$this->session->flashdata('sukses').'</p>';
+                  echo '<script> msg("success", "'.$this->session->flashdata('sukses').'"</script>';
             }
             
             echo form_open('login');
@@ -19,7 +19,7 @@
                 <label class="form-label ">Email</label>
                 <input type="email" class="form-control" name="email" id="email" value="<?php echo set_value('email'); ?>" placeholder="Enter your email">
                 <p><?php echo form_error('email') ;?></p>
-              </div>
+            </div>
             <div class="mb-3">
                 <label class="form-label ">Password</label>
                 <input type="password" class="form-control" name="password" id="password" value="<?php echo set_value('password'); ?>" placeholder="Enter your password">
@@ -27,7 +27,7 @@
             </div>
             <!-- forgot passowrd -->
             <p class="small">
-              <a class="text-primary" href="forget-password.html">Forgot password?</a>
+              <a class="text-primary"><?php echo anchor(site_url().'/forgot_password','Forgot password?'); ?></a>
             </p>
             <div class="d-grid">
                 <button class="btn btn-outline-dark" type="submit" name="btnSubmit" >Login</button>
